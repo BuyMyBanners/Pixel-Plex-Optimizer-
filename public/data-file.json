@@ -1,0 +1,185 @@
+{
+  "buildingTypes": {
+    "houses": {
+      "cabin": {
+        "baseCost": { "money": 55, "wood": 30, "cement": 5, "steel": 0 },
+        "baseIncome": 18,
+        "peopleCapacity": 1,
+        "prefers": ["lumber mill", "farm", "cement factory", "diner", "bakery"],
+        "upgrades": [
+          { "level": 2, "cost": { "money": 90, "wood": 45, "cement": 10, "steel": 0 }, "income": 24, "peopleCapacity": 2 },
+          { "level": 3, "cost": { "money": 160, "wood": 80, "cement": 20, "steel": 0 }, "income": 35, "peopleCapacity": 3 },
+          { "level": 4, "cost": { "money": 250, "wood": 130, "cement": 30, "steel": 0 }, "income": 50, "peopleCapacity": 4 },
+          { "level": 5, "cost": { "money": 400, "wood": 190, "cement": 45, "steel": 0 }, "income": 65, "peopleCapacity": 5 }
+        ]
+      },
+      "house": {
+        "baseCost": { "money": 100, "wood": 60, "cement": 30, "steel": 0 },
+        "baseIncome": 18,
+        "peopleCapacity": 2,
+        "prefers": ["lumber mill", "farm", "cement factory", "diner", "bakery", "coffee shop", "fast food", "steel mill", "flower shop", "clinic"],
+        "upgrades": [
+          { "level": 2, "cost": { "money": 300, "wood": 85, "cement": 50, "steel": 0 }, "income": 26, "peopleCapacity": 3 },
+          { "level": 3, "cost": { "money": 810, "wood": 125, "cement": 90, "steel": 10 }, "income": 40, "peopleCapacity": 4 },
+          { "level": 4, "cost": { "money": 1250, "wood": 200, "cement": 130, "steel": 40 }, "income": 60, "peopleCapacity": 5 },
+          { "level": 5, "cost": { "money": 1800, "wood": 275, "cement": 180, "steel": 60 }, "income": 80, "peopleCapacity": 6 }
+        ]
+      },
+      "duplex": {
+        "baseCost": { "money": 250, "wood": 90, "cement": 50, "steel": 0 },
+        "baseIncome": 18,
+        "peopleCapacity": 2,
+        "prefers": ["lumber mill", "farm", "cement factory", "diner", "bakery", "coffee shop", "fast food", "steel mill", "flower shop", "clinic", "food truck", "gas station"],
+        "upgrades": [
+          { "level": 2, "cost": { "money": 580, "wood": 130, "cement": 75, "steel": 0 }, "income": 28, "peopleCapacity": 4 },
+          { "level": 3, "cost": { "money": 1100, "wood": 180, "cement": 120, "steel": 30 }, "income": 45, "peopleCapacity": 6 },
+          { "level": 4, "cost": { "money": 1950, "wood": 280, "cement": 190, "steel": 70 }, "income": 70, "peopleCapacity": 8 },
+          { "level": 5, "cost": { "money": 3100, "wood": 440, "cement": 290, "steel": 120 }, "income": 90, "peopleCapacity": 10 }
+        ]
+      }
+    },
+    "businesses": {
+      "farm": {
+        "baseCost": { "money": 85, "wood": 30, "cement": 15, "steel": 0 },
+        "baseIncome": 14,
+        "employees": 2,
+        "upgrades": [
+          { "level": 2, "cost": { "money": 230, "wood": 55, "cement": 35, "steel": 0 }, "income": 19, "employees": 3 },
+          { "level": 3, "cost": { "money": 650, "wood": 80, "cement": 60, "steel": 0 }, "income": 26, "employees": 4 },
+          { "level": 4, "cost": { "money": 1015, "wood": 120, "cement": 90, "steel": 30 }, "income": 38, "employees": 5 },
+          { "level": 5, "cost": { "money": 1400, "wood": 200, "cement": 120, "steel": 60 }, "income": 52, "employees": 6 }
+        ]
+      },
+      "diner": {
+        "baseCost": { "money": 130, "wood": 35, "cement": 30, "steel": 0 },
+        "baseIncome": 16,
+        "employees": 2,
+        "upgrades": [
+          { "level": 2, "cost": { "money": 250, "wood": 55, "cement": 45, "steel": 10 }, "income": 22, "employees": 3 },
+          { "level": 3, "cost": { "money": 650, "wood": 80, "cement": 70, "steel": 15 }, "income": 30, "employees": 4 },
+          { "level": 4, "cost": { "money": 1015, "wood": 120, "cement": 100, "steel": 30 }, "income": 42, "employees": 5 },
+          { "level": 5, "cost": { "money": 1500, "wood": 200, "cement": 130, "steel": 55 }, "income": 56, "employees": 6 }
+        ]
+      },
+      "coffee shop": {
+        "baseCost": { "money": 200, "wood": 50, "cement": 25, "steel": 0 },
+        "baseIncome": 18,
+        "employees": 2,
+        "upgrades": [
+          { "level": 2, "cost": { "money": 300, "wood": 75, "cement": 40, "steel": 10 }, "income": 28, "employees": 4 },
+          { "level": 3, "cost": { "money": 800, "wood": 120, "cement": 70, "steel": 25 }, "income": 40, "employees": 6 },
+          { "level": 4, "cost": { "money": 1700, "wood": 175, "cement": 110, "steel": 60 }, "income": 55, "employees": 8 },
+          { "level": 5, "cost": { "money": 3600, "wood": 250, "cement": 160, "steel": 90 }, "income": 75, "employees": 10 }
+        ]
+      },
+      "fast food": {
+        "baseCost": { "money": 500, "wood": 85, "cement": 50, "steel": 30 },
+        "baseIncome": 16,
+        "employees": 3,
+        "upgrades": [
+          { "level": 2, "cost": { "money": 1020, "wood": 95, "cement": 85, "steel": 50 }, "income": 32, "employees": 4 },
+          { "level": 3, "cost": { "money": 1600, "wood": 110, "cement": 120, "steel": 85 }, "income": 48, "employees": 5 },
+          { "level": 4, "cost": { "money": 2800, "wood": 150, "cement": 160, "steel": 125 }, "income": 65, "employees": 6 },
+          { "level": 5, "cost": { "money": 3950, "wood": 250, "cement": 220, "steel": 200 }, "income": 80, "employees": 8 }
+        ]
+      },
+      "clinic": {
+        "baseCost": { "money": 350, "wood": 70, "cement": 40, "steel": 15 },
+        "baseIncome": 19,
+        "employees": 2,
+        "upgrades": [
+          { "level": 2, "cost": { "money": 800, "wood": 115, "cement": 65, "steel": 30 }, "income": 35, "employees": 3 },
+          { "level": 3, "cost": { "money": 1450, "wood": 140, "cement": 95, "steel": 60 }, "income": 56, "employees": 4 },
+          { "level": 4, "cost": { "money": 2500, "wood": 220, "cement": 130, "steel": 100 }, "income": 72, "employees": 5 },
+          { "level": 5, "cost": { "money": 3850, "wood": 330, "cement": 190, "steel": 180 }, "income": 95, "employees": 6 }
+        ]
+      },
+      "gas station": {
+        "baseCost": { "money": 420, "wood": 70, "cement": 100, "steel": 10 },
+        "baseIncome": 20,
+        "employees": 2,
+        "upgrades": [
+          { "level": 2, "cost": { "money": 850, "wood": 115, "cement": 140, "steel": 30 }, "income": 36, "employees": 3 },
+          { "level": 3, "cost": { "money": 1500, "wood": 140, "cement": 190, "steel": 50 }, "income": 58, "employees": 4 },
+          { "level": 4, "cost": { "money": 2850, "wood": 200, "cement": 260, "steel": 85 }, "income": 75, "employees": 5 },
+          { "level": 5, "cost": { "money": 4000, "wood": 280, "cement": 350, "steel": 120 }, "income": 100, "employees": 6 }
+        ]
+      },
+      "car rental": {
+        "baseCost": { "money": 750, "wood": 60, "cement": 40, "steel": 60 },
+        "baseIncome": 26,
+        "employees": 2,
+        "upgrades": [
+          { "level": 2, "cost": { "money": 900, "wood": 90, "cement": 75, "steel": 100 }, "income": 40, "employees": 3 },
+          { "level": 3, "cost": { "money": 1150, "wood": 130, "cement": 110, "steel": 155 }, "income": 60, "employees": 4 },
+          { "level": 4, "cost": { "money": 1400, "wood": 170, "cement": 180, "steel": 215 }, "income": 82, "employees": 5 },
+          { "level": 5, "cost": { "money": 3600, "wood": 250, "cement": 265, "steel": 290 }, "income": 105, "employees": 6 }
+        ]
+      },
+      "market": {
+        "baseCost": { "money": 1150, "wood": 160, "cement": 110, "steel": 60 },
+        "baseIncome": 30,
+        "employees": 4,
+        "upgrades": [
+          { "level": 2, "cost": { "money": 1800, "wood": 220, "cement": 170, "steel": 100 }, "income": 48, "employees": 5 },
+          { "level": 3, "cost": { "money": 2950, "wood": 330, "cement": 245, "steel": 135 }, "income": 78, "employees": 6 },
+          { "level": 4, "cost": { "money": 4400, "wood": 470, "cement": 360, "steel": 170 }, "income": 96, "employees": 8 },
+          { "level": 5, "cost": { "money": 6500, "wood": 690, "cement": 475, "steel": 210 }, "income": 120, "employees": 10 }
+        ]
+      }
+    },
+    "storage": {
+      "barn": {
+        "baseCost": { "money": 200, "wood": 50, "cement": 30, "steel": 10 },
+        "baseIncome": 0,
+        "capacity": { "money": 1000, "wood": 500, "cement": 500, "steel": 200 },
+        "upgrades": [
+          { "level": 2, "cost": { "money": 600, "wood": 140, "cement": 60, "steel": 25 }, "capacity": { "money": 2000, "wood": 600, "cement": 600, "steel": 300 } },
+          { "level": 3, "cost": { "money": 2400, "wood": 215, "cement": 120, "steel": 80 }, "capacity": { "money": 3000, "wood": 700, "cement": 700, "steel": 400 } },
+          { "level": 4, "cost": { "money": 5600, "wood": 380, "cement": 240, "steel": 200 }, "capacity": { "money": 4000, "wood": 800, "cement": 800, "steel": 500 } },
+          { "level": 5, "cost": { "money": 8500, "wood": 550, "cement": 480, "steel": 375 }, "capacity": { "money": 5000, "wood": 900, "cement": 900, "steel": 600 } }
+        ]
+      },
+      "warehouse": {
+        "baseCost": { "money": 5600, "wood": 380, "cement": 240, "steel": 200 },
+        "baseIncome": 0,
+        "capacity": { "money": 4000, "wood": 800, "cement": 800, "steel": 500 },
+        "upgrades": [
+          { "level": 2, "cost": { "money": 8500, "wood": 550, "cement": 480, "steel": 375 }, "capacity": { "money": 5000, "wood": 900, "cement": 900, "steel": 600 } },
+          { "level": 3, "cost": { "money": 12000, "wood": 1150, "cement": 990, "steel": 675 }, "capacity": { "money": 5500, "wood": 950, "cement": 950, "steel": 650 } },
+          { "level": 4, "cost": { "money": 18000, "wood": 1850, "cement": 1550, "steel": 1175 }, "capacity": { "money": 6000, "wood": 1000, "cement": 1000, "steel": 700 } },
+          { "level": 5, "cost": { "money": 25000, "wood": 3100, "cement": 2500, "steel": 2375 }, "capacity": { "money": 6500, "wood": 1050, "cement": 1050, "steel": 750 } },
+          { "level": 6, "cost": { "money": 35000, "wood": 5150, "cement": 4750, "steel": 4400 }, "capacity": { "money": 7000, "wood": 1100, "cement": 1100, "steel": 800 } },
+          { "level": 7, "cost": { "money": 50000, "wood": 6400, "cement": 6000, "steel": 6800 }, "capacity": { "money": 7500, "wood": 1150, "cement": 1150, "steel": 850 } },
+          { "level": 8, "cost": { "money": 60000, "wood": 75000, "cement": 7000, "steel": 8000 }, "capacity": { "money": 8500, "wood": 12500, "cement": 1250, "steel": 950 } },
+          { "level": 9, "cost": { "money": 70000, "wood": 8500, "cement": 8000, "steel": 9000 }, "capacity": { "money": 10000, "wood": 1350, "cement": 1350, "steel": 1050 } },
+          { "level": 10, "cost": { "money": 80000, "wood": 9500, "cement": 95000, "steel": 10000 }, "capacity": { "money": 12000, "wood": 1500, "cement": 1500, "steel": 1200 } }
+        ]
+      },
+      "bank": {
+        "baseCost": { "money": 3000, "wood": 310, "cement": 270, "steel": 340 },
+        "baseIncome": 0,
+        "capacity": { "money": 1000, "wood": 0, "cement": 0, "steel": 0 },
+        "upgrades": [
+          { "level": 2, "cost": { "money": 5200, "wood": 540, "cement": 425, "steel": 600 }, "capacity": { "money": 2000, "wood": 0, "cement": 0, "steel": 0 } },
+          { "level": 3, "cost": { "money": 10500, "wood": 780, "cement": 630, "steel": 830 }, "capacity": { "money": 4000, "wood": 0, "cement": 0, "steel": 0 } },
+          { "level": 4, "cost": { "money": 16000, "wood": 1350, "cement": 1140, "steel": 1440 }, "capacity": { "money": 6000, "wood": 0, "cement": 0, "steel": 0 } },
+          { "level": 5, "cost": { "money": 22000, "wood": 2400, "cement": 2100, "steel": 2500 }, "capacity": { "money": 8000, "wood": 0, "cement": 0, "steel": 0 } },
+          { "level": 6, "cost": { "money": 30000, "wood": 3510, "cement": 3390, "steel": 3730 }, "capacity": { "money": 12000, "wood": 0, "cement": 0, "steel": 0 } },
+          { "level": 7, "cost": { "money": 42000, "wood": 5250, "cement": 4950, "steel": 5515 }, "capacity": { "money": 16000, "wood": 0, "cement": 0, "steel": 0 } },
+          { "level": 8, "cost": { "money": 60000, "wood": 6800, "cement": 6200, "steel": 7200 }, "capacity": { "money": 20000, "wood": 0, "cement": 0, "steel": 0 } },
+          { "level": 9, "cost": { "money": 70000, "wood": 7200, "cement": 6200, "steel": 7200 }, "capacity": { "money": 24000, "wood": 0, "cement": 0, "steel": 0 } },
+          { "level": 10, "cost": { "money": 80000, "wood": 8000, "cement": 7400, "steel": 8400 }, "capacity": { "money": 30000, "wood": 0, "cement": 0, "steel": 0 } }
+        ]
+      }
+    },
+    "misc": {
+      "contractor": {
+        "baseCost": { "money": 0, "wood": 0, "cement": 0, "steel": 0 },
+        "levelCap": 1,
+        "baseIncome": 0,
+        "upgrades": [{ "level": 2, "cost": { "money": 180, "wood": 65, "cement": 50, "steel": 0 }, "levelCap": 2 }]
+      }
+    }
+  }
+}
