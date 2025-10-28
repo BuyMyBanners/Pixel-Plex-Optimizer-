@@ -1,16 +1,14 @@
 import React from "react"
 import { optimizeBlockIncome } from "./optimize"
-import { optimizeBlockIncomeFromDefinitions } from "./optimize"
+import { optimizeMultipleBlocks } from "./optimize"
 
 export function Welcome() {
   async function runOptimizer() {
     try {
       // load data-file.json (served from public or repo root depending on dev server config)
-      const res = await fetch("./data-file.json")
-      if (!res.ok) throw new Error(`Failed to load data-file.json: ${res.status}`)
-      const defs = await res.json()
-
-      const result = optimizeBlockIncomeFromDefinitions(defs, 16, { debug: true, beamWidth: 800 })
+      const defs = await fetch("/data-file.json").then((r) => r.json())
+      const result = optimizeMultipleBlocks(defs, 3, 16, { debug: true, beamWidth: 1200 })
+      // Optimizes 3 blocks, each with size limit 16
       console.log("Optimizer result:", result)
     } catch (e) {
       console.error("Optimizer failed:", e)
