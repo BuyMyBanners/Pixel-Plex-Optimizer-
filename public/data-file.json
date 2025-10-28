@@ -177,6 +177,7 @@
       "contractor": {
         "baseCost": { "money": 0, "wood": 0, "cement": 0, "steel": 0 },
         "levelCap": 1,
+        "mandatory": true,
         "baseIncome": 0,
         "upgrades": [{ "level": 2, "cost": { "money": 180, "wood": 65, "cement": 50, "steel": 0 }, "levelCap": 2 }]
       }
