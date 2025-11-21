@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,
@@ -12,4 +11,243 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Optimizer Page Layout */
+.optimizer-container {
+  @apply min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-950 py-8 px-4;
+}
+
+.optimizer-wrapper {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Header */
+.optimizer-header {
+  @apply text-center mb-8;
+}
+
+.optimizer-title {
+  @apply text-4xl font-bold text-gray-900 dark:text-white mb-2;
+}
+
+.optimizer-subtitle {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Configuration Section */
+.config-container {
+  @apply max-w-2xl mx-auto;
+}
+
+.config-card {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8;
+}
+
+.config-title {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white mb-6;
+}
+
+.config-form {
+  @apply space-y-6;
+}
+
+.form-group {
+  @apply block;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2;
+}
+
+.form-input {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.form-hint {
+  @apply mt-1 text-sm text-gray-500 dark:text-gray-400;
+}
+
+/* Error Alert */
+.error-alert {
+  @apply p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800;
+}
+
+.error-text {
+  @apply text-sm text-red-800 dark:text-red-200;
+}
+
+/* Primary Button */
+.btn-primary {
+  @apply w-full py-4 px-6 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-[1.02];
+}
+
+/* Loading Screen */
+.loading-container {
+  @apply flex flex-col items-center justify-center py-20;
+}
+
+.spinner-wrapper {
+  @apply relative w-24 h-24 mb-8;
+}
+
+.spinner-base {
+  @apply absolute inset-0 border-8 border-blue-200 dark:border-blue-900 rounded-full;
+}
+
+.spinner-animated {
+  @apply absolute inset-0 border-8 border-transparent border-t-blue-600 dark:border-t-blue-400 rounded-full animate-spin;
+}
+
+.loading-title {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white mb-2;
+}
+
+.loading-text {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+/* Results Section */
+.results-container {
+  @apply space-y-6;
+}
+
+.results-card {
+  @apply bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8;
+}
+
+.results-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.results-title {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 rounded-lg bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors;
+}
+
+/* Stats Grid */
+.stats-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4 mb-8;
+}
+
+.stat-card-green {
+  @apply bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-xl p-6 border border-green-200 dark:border-green-800;
+}
+
+.stat-card-blue {
+  @apply bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl p-6 border border-blue-200 dark:border-blue-800;
+}
+
+.stat-card-purple {
+  @apply bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-xl p-6 border border-purple-200 dark:border-purple-800;
+}
+
+.stat-label-green {
+  @apply text-sm font-medium text-green-800 dark:text-green-300 mb-1;
+}
+
+.stat-label-blue {
+  @apply text-sm font-medium text-blue-800 dark:text-blue-300 mb-1;
+}
+
+.stat-label-purple {
+  @apply text-sm font-medium text-purple-800 dark:text-purple-300 mb-1;
+}
+
+.stat-value-green {
+  @apply text-3xl font-bold text-green-900 dark:text-green-100;
+}
+
+.stat-value-blue {
+  @apply text-sm font-semibold text-blue-900 dark:text-blue-100 space-y-1;
+}
+
+.stat-value-purple {
+  @apply text-3xl font-bold text-purple-900 dark:text-purple-100;
+}
+
+/* Blocks Section */
+.blocks-container {
+  @apply space-y-6;
+}
+
+.block-card {
+  @apply bg-gray-50 dark:bg-gray-900 rounded-xl p-6 border border-gray-200 dark:border-gray-700;
+}
+
+.block-header {
+  @apply flex items-center justify-between mb-4;
+}
+
+.block-title {
+  @apply text-xl font-semibold text-gray-900 dark:text-white;
+}
+
+.block-stats {
+  @apply flex gap-4 text-sm;
+}
+
+.block-stat {
+  @apply text-gray-600 dark:text-gray-400;
+}
+
+.block-stat-value {
+  @apply font-semibold text-gray-900 dark:text-white;
+}
+
+/* Buildings Grid */
+.buildings-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3;
+}
+
+.building-card {
+  @apply bg-white dark:bg-gray-800 rounded-lg p-4 border border-gray-200 dark:border-gray-700 hover:shadow-md transition-shadow;
+}
+
+.building-header {
+  @apply flex items-start justify-between mb-2;
+}
+
+.building-info {
+  @apply flex-1;
+}
+
+.building-name {
+  @apply font-semibold text-gray-900 dark:text-white;
+}
+
+.building-level {
+  @apply text-xs text-gray-500 dark:text-gray-400;
+}
+
+.building-badge {
+  @apply text-xs px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300;
+}
+
+.building-details {
+  @apply space-y-1 text-sm;
+}
+
+.building-detail-row {
+  @apply flex justify-between text-gray-600 dark:text-gray-400;
+}
+
+.building-detail-value {
+  @apply font-medium text-gray-900 dark:text-white;
 }
